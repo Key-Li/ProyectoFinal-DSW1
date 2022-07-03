@@ -1,0 +1,242 @@
+﻿@model ProyectoFinal_DSW1.Models.Alumno
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Home</title>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+          crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+          crossorigin="anonymous">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="/assets/vendor/bootstrap/css/bootstrap.min.css"
+          rel="stylesheet">
+    <link href="/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="/assets/vendor/boxicons/css/boxicons.min.css"
+          rel="stylesheet">
+    <link href="/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="/assets/vendor/owl.carousel/assets/owl.carousel.min.css"
+          rel="stylesheet">
+    <link href="/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="/css/Estilo-Home.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body id="b">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="/Alumno/Index">
+            <i class="fas fa-university"></i>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a id="link" class="nav-link active" href="">
+                    <span class="sr-only">(current)</span>
+                </a> <a id="link" class="nav-link"
+                        href="#about">Nosotros</a> <a id="link" class="nav-link" href="#popular-courses">Cursos Populares</a>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <section id="hero"
+                 class="d-flex justify-content-center align-items-center">
+            <div class="container position-relative" data-aos="zoom-in"
+                 data-aos-delay="100">
+                <h1>
+                    Learning Today,<br>Leading Tomorrow
+                </h1>
+                <a href="/Alumno/Login" class="btn-get-started">Iniciar</a>
+            </div>
+        </section>
+    </header>
+
+    <main id="main">
+        <section id="about" class="about">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2></h2>
+                    <p>Sobre nosotros</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left"
+                         data-aos-delay="100">
+                        <img src="/assets/img/5.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+                        <h3>Xavier Institute for Higher Learning</h3>
+                        <p class="font-italic">
+                            Es una institución que brinda cursos
+                            direccionados a personas con habilidades especiales y mucho potencial.
+                        </p>
+                        <ul>
+                            <li><i class="icofont-check-circled"></i> Desarrolla tu talento</li>
+                            <li><i class="icofont-check-circled"></i> Lidera tu fututo</li>
+                            <li><i class="icofont-check-circled"></i> Prepara tu mente y tu cuerpo</li>
+                            <li><i class="icofont-check-circled"></i> Libera tu potencial</li>
+                        </ul>
+                        <p>
+                            El cuerpo no puede lograr lo que la mente no puede imaginar.
+                            El primer paso para crecer es, por tanto, dominar tu mente.
+                        </p><br>
+                        <p>Estudia con nosotros y desarrolla tu mente y tu cuerpo. </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="features" class="features">
+            <div class="container" data-aos="fade-up">
+
+                <div class="row" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="icon-box">
+                            <i class="ri-store-line" style="color: #ffbb2c;"></i>
+                            <h3><a href="">Tienda on line</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+                        <div class="icon-box">
+                            <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
+                            <h3><a href="">Monitorea tu progreso</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+                        <div class="icon-box">
+                            <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
+                            <h3><a href="">Horarios Flexibles</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+                        <div class="icon-box">
+                            <i class="ri-map-pin-user-line" style="color: #26C6DA;"></i>
+                            <h3><a href="">Ubicación céntrtica</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 mt-4">
+                        <div class="icon-box">
+                            <i class="ri-database-2-line" style="color: #47aeff;"></i>
+                            <h3><a href="">Bases de datos</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 mt-4">
+                        <div class="icon-box">
+                            <i class="ri-base-station-line" style="color: #ff5828;"></i>
+                            <h3><a href="">Mantente conectado</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 mt-4">
+                        <div class="icon-box">
+                            <i class="ri-book-3-line" style="color: #11dbcf;"></i>
+                            <h3><a href="">Biblioteca</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 mt-4">
+                        <div class="icon-box">
+                            <i class="ri-parking-fill" style="color: #4233ff;"></i>
+                            <h3><a href="">Parqueo</a></h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="popular-courses" class="courses">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2></h2>
+                    <p>Cursos Populares</p>
+                </div>
+
+                <div class="row" data-aos="zoom-in" data-aos-delay="100">
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                        <div class="course-item">
+                            <img src="/assets/img/cursoT.png" class="img-fluid" alt="...">
+                            <div class="course-content">
+                                <h3>Telequinesis</h3>
+                                <p>
+                                    Aprende a leer la mente de la gente a tu alrededor en esta clase liderada
+                                    por el fundador de nuestra escuela el profesor Charles Xavier.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div> <!-- End Course Item-->
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+                        <div class="course-item">
+                            <img src="/assets/img/cursoQ.png" class="img-fluid" alt="...">
+                            <div class="course-content">
+                                <h3>Psicoquinesis</h3>
+                                <p>
+                                    Aprende a controlar objetos metalicos con la mente en esta clase maestra
+                                    brindada por Erik Lehnsherr.
+                                </p>
+                            </div>
+                        </div>
+                    </div> <!-- End Course Item-->
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+                        <div class="course-item">
+                            <img src="/assets/img/cursoM.png" class="img-fluid" alt="...">
+                            <div class="course-content">
+                                <h3>Mimetismo</h3>
+                                <p>
+                                    Aprende el arte de camuflarte en cualquier lugar en esta clase dictada por
+                                    Raven Darkhölme.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <img src="/img/twitter.png">
+        <img src="/img/linkedin.png">
+        <img src="/img/youtube.png">
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+                crossorigin="anonymous"></script>
+    </footer>
+
+</body>
+</html>
+<script src="/assets/vendor/jquery/jquery.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+<script src="/assets/vendor/php-email-form/validate.js"></script>
+<script src="/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+<script src="/assets/vendor/counterup/counterup.min.js"></script>
+<script src="/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+<script src="/assets/vendor/aos/aos.js"></script>
+<script src="/assets/js/main.js"></script>
+
+

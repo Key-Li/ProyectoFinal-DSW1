@@ -1,0 +1,61 @@
+@charset "ISO-8859-1";
+
+<style type="text/css">
+			
+* {
+	margin:0px;
+	padding:0px;
+}
+
+main{
+	background-color:#EAF2F8;
+}
+
+nav{
+	background-color:#154360;
+}
+
+nav i{
+	color:#EAF2F8; 
+	font-size:30px;
+}
+
+#link{
+	color:#EAF2F8;
+}
+
+header img{
+	opacity:.8;
+}
+
+#menu{
+	padding:4%;
+	float:left;
+}
+
+#bt{
+	color: #EAF2F8;
+	background: #154360;
+	border-color: #154360;
+	padding: 15px 32px;	
+}
+
+#bt:hover {
+  background-color: #D4E6F1; 
+  color: #154360;
+}
+
+#s2{
+	width: 70%;
+	float:left;
+	padding:4%;
+	margin-left:4%;
+}
+
+footer{
+	background-color:#154360;
+	padding:8px;
+	clear:both;
+}
+
+</style>

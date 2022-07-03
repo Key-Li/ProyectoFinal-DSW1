@@ -1,0 +1,164 @@
+﻿@model ProyectoFinal_DSW1.Models.Alumno
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>Registro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="/css/Estilo-Login.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body id="b">
+    <nav th:fragment="navLogin" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="/Alumno/Index">
+            <i class="fas fa-university"></i>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a id="link" class="nav-link active" href="/Alumno/Index">
+                    Inicio<span class="sr-only">(current)</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <img src="/img/mansion.png" alt="" width="100%">
+    </header>
+    @if (@ViewBag.mensaje != null)
+    {
+        <div class="alert alert-info alert-dismissible show" role="alert" style="margin-top:10px">            
+            @ViewBag.mensaje
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+     } 
+    <main>
+        <section id="s2">
+            <div id="form">
+                <form method="post">
+                    <h1>REGISTRATE</h1>
+                    <div class="form-group">
+                        <label id="label">Nombre</label>
+                        @Html.TextBoxFor(model => model.nomalum, new
+                        {
+                            @id = "textbox",
+                            @class = "form-control",
+                            @placeholder = "Ingrese nombre del alumnno",
+                            @maxlength = "45",
+                            @type = "text",
+                            @required = "required",
+                            @pattern = "^([a-zA-Z .&'-]+)$"
+                        })
+                    </div>
+                    <div class="form-group">
+                        <label id="label">Apellido</label>
+                        @Html.TextBoxFor(model => model.apealum, new
+                        {
+                            @id = "textbox",
+                            @class = "form-control",
+                            @placeholder = "Ingrese apellido del alumnno",
+                            @maxlength = "45",
+                            @type = "text",
+                            @required = "required",
+                            @pattern = "^([a-zA-Z .&'-]+)$"
+                        })
+
+                    </div>
+                    <div class="form-group">
+                        <label id="label">DNI del alumno</label>
+                        @Html.TextBoxFor(model => model.dnialum, new
+                        {
+                            @id = "textbox",
+                            @class = "form-control",
+                            @placeholder = "Ingrese DNI del alumnno",
+                            @maxlength = "8",
+                            @type = "text",
+                            @required = "required",
+                            @pattern = "[0-9]{8}"
+                        })
+                    </div>
+                    <div class="form-group">
+                        <label id="label">Celular del alumno</label>
+                        @Html.TextBoxFor(model => model.celalum, new
+                        {
+                            @id = "textbox",
+                            @class = "form-control",
+                            @placeholder = "Ingrese número de celular del alumnno",
+                            @maxlength = "9",
+                            @type = "text",
+                            @required = "required",
+                            @pattern = "[0-9]{9}"
+                        })
+
+                    </div>
+                    <div class="form-group">
+                        <label id="label">Fecha de Nacimiento</label>
+                        @Html.TextBoxFor(model => model.fechalum, new
+                        {
+                            @id = "textbox",
+                            @class = "form-control",
+                            @type = "date",
+                            @required = "required"
+                        })
+
+                    </div>
+                    <div class="form-group">
+                        <label id="label">Usuario</label>
+                        @Html.TextBoxFor(model => model.usualum, new
+                        {
+                            @id = "textbox",
+                            @class = "form-control",
+                            @type = "email",
+                            @placeholder = "Ingrese correo",
+                            @required = "required"
+                        })
+                    </div>
+                    <div class="form-group">
+                        <label id="label">Password</label>
+                        @Html.TextBoxFor(model => model.passalum, new
+                        {
+                            @id = "textbox",
+                            @class = "form-control",
+                            @type = "password",
+                            @placeholder = "Ingrese Clave",
+                            @required = "required",
+                            @pattern = "[a-zA-Z0-9]{4,6}"
+                        })
+                    </div>
+                    <button id="bform" type="submit" class="btn btn-primary">REGISTRAR</button>
+                </form>
+                <br>
+                <p>Si ya tiene cuenta, pulse <a href="/Alumno/Login">aquí</a> para iniciar sesión</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img src="/img/twitter.png">
+        <img src="/img/linkedin.png">
+        <img src="/img/youtube.png">
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+                crossorigin="anonymous"></script>
+    </footer>
+</body>
+</html>
